@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alpha Clash</title>
+    <!-- Add DaisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- CSS Style area  -->
+    <link rel="stylesheet" href="/styles/styles.css" />
+  </head>
+  <body>
+    <main  class="min-h-screen bg-[#1E1E1E] bg-[url('/images/background.png')] bg-no-repeat bg-center ">
+      <!-- This is opening interface -->
+      <section id="home-page" class="" >
+          <div class="min-h-screen flex flex-col justify-center  items-center space-y-2 ">
+            <h1 class="font-anton text-8xl uppercase font-bold text-white">Alpha Clash</h1>
+            <p class="text-white font-poppins">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
+            <button onclick="play()" class="btn bg-white text-black">Play</button>
+
+          </div>
+      </section>
+
+      <!-- This is playground interface -->
+      <section id="play-ground" class="flex flex-col items-center hidden">
+        <!-- This is for screen area -->
+        <div class="artboard artboard-horizontal phone-6  bg-[#FFFFFFB3] opacity-85 border-8 rounded-2xl border-[#010313CC] m-10 ">
+          <div>
+            <h1 class="font-poppins font-semibold text-[128px] text-center uppercase">y</h1>
+          </div>
+        </div>
+        <!-- Keyboard Area -->
+         <!-- keyboard start -->
+         <div class="my-1 flex w-full justify-center gap-1">
+          <kbd class="kbd">q</kbd>
+          <kbd class="kbd">w</kbd>
+          <kbd class="kbd">e</kbd>
+          <kbd class="kbd">r</kbd>
+          <kbd class="kbd">t</kbd>
+          <kbd class="kbd">y</kbd>
+          <kbd class="kbd">u</kbd>
+          <kbd class="kbd">i</kbd>
+          <kbd class="kbd">o</kbd>
+          <kbd class="kbd">p</kbd>
+        </div>
+        <div class="my-1 flex w-full justify-center gap-1">
+          <kbd class="kbd">a</kbd>
+          <kbd class="kbd">s</kbd>
+          <kbd class="kbd">d</kbd>
+          <kbd class="kbd">f</kbd>
+          <kbd class="kbd">g</kbd>
+          <kbd class="kbd">h</kbd>
+          <kbd class="kbd">j</kbd>
+          <kbd class="kbd">k</kbd>
+          <kbd class="kbd">l</kbd>
+        </div>
+        <div class="my-1 flex w-full justify-center gap-1">
+          <kbd class="kbd">z</kbd>
+          <kbd class="kbd">x</kbd>
+          <kbd class="kbd">c</kbd>
+          <kbd class="kbd">v</kbd>
+          <kbd class="kbd">b</kbd>
+          <kbd class="kbd">n</kbd>
+          <kbd class="kbd">m</kbd>
+          <kbd class="kbd">/</kbd>
+        </div>
+        <!-- Keyboard end -->
+         <!-- Life & Score -->
+         <div class="w-[1170px] flex justify-between"> 
+          <button class="btn bg-[#894189] text-white"> Life <img src="images/Group 31.svg" alt=""> 1</button>
+          <button class="btn bg-[#360490] text-white"> Score <img src="images/monetization_on.svg" alt=""> 1 </button>
+        </div>
+      </section>
+
+      <!-- This is scoreboard interface -->
+      <section class="items-center min-h-screen place-items-center flex justify-center hidden">
+        <div class="font-poppins   w-[396px]  flex flex-col   space-y-3 border-2 border-white rounded-lg p-5">
+          <h3 class="text-[64px] text-[#FFFFFF] text-center"><span class="font-extrabold">Socre:</span> 14</h3>
+          <button class="btn bg-white text-black text-center ">Play Again</button>
+          <p class="text-white text-center">Practice will make you pro</p>
+        </div>
+      </section>
+
+      <!-- JS link -->
+       <script src="scripts/alpha-scripts.js"></script>
+    </main>
+  </body>
+</html>
