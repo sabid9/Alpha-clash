@@ -3,7 +3,13 @@
 
 function addKeyboardKeyupEvent(event){
     const currentPrassed = event.key;
+    console.log(currentPrassed);
     
+    
+
+    if(currentPrassed === 'Escape'){
+        gameOver();
+    }
     // const currentAlphabetElement = document.getElementById('current-alphabet');
     // const expectedAlphabet = currentAlphabetElement.innerText;
     // const currentAlphabet = expectedAlphabet.toLowerCase();
