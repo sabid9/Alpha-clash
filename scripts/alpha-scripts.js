@@ -20,6 +20,8 @@ function addKeyboardKeyupEvent(event){
         const updatedScore = currentScore + 1;
 
         setElementValueById('current-score',updatedScore);
+        setElementValueById('game-point',updatedScore);
+        
         
         
     }
@@ -69,5 +71,6 @@ function play(){
 function gameOver(){
     hideElementById('play-ground');
     addElementId('score-card');
-    removeKeyboardBackgroud()
+    const currentAlphabet =  getTextElementById('current-alphabet');
+    removeKeyboardBackgroud(currentAlphabet);
 }

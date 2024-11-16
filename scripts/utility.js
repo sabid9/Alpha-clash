@@ -56,3 +56,4 @@ function getTextElementById(elementId){
     const text  = alphabetInnerText.toLowerCase();
     return text;
 }
+
